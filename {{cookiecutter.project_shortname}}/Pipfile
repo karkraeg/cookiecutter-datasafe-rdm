@@ -14,7 +14,9 @@ invenio-app-rdm = {extras = ["{{ cookiecutter.database }}", "{{ cookiecutter.sea
 uwsgi = ">=2.0"
 uwsgitop = ">=0.11"
 uwsgi-tools = ">=1.1.1"
-#invenio-theme-ulbms = {git = "git@zivgitlab.uni-muenster.de:ULB/dd-wi/inveniordm/invenio-theme-ulbms.git", ref = "main"}
+
+[dev-packages]
+invenio-theme-ulbms = {git = "git@zivgitlab.uni-muenster.de:ULB/dd-wi/inveniordm/invenio-theme-ulbms.git", ref = "main", editable = true}
 
 [requires]
 python_version = "3.9"
